@@ -23,31 +23,31 @@ const ProjectsSection = () => {
   const pathname = usePathname(); // Hook to track the current path
 
   // Fetch GitHub repositories when the component mounts or when the search or pathname changes
-  useEffect(() => {
-    const fetchProjects = async () => {
-      setIsLoading(true);
-      setFetchError(''); // Reset error message before fetching
-      try {
-        const response = await fetch(
-          `/api/fetch-projects?search=${projectSearch}`
-        );
-        if (!response.ok) {
-          throw new Error('Failed to fetch repositories');
-        }
-        const data = await response.json();
-        // Ensure data is an array before setting it
-        setAllProjectsInfo(Array.isArray(data) ? data : []);
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-        setFetchError('Failed to fetch projects'); // Set the error message
-        setAllProjectsInfo([]); // Fallback to empty array if an error occurs
-      } finally {
-        setIsLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProjects = async () => {
+  //     setIsLoading(true);
+  //     setFetchError(''); // Reset error message before fetching
+  //     try {
+  //       const response = await fetch(
+  //         `/api/fetch-projects?search=${projectSearch}`
+  //       );
+  //       if (!response.ok) {
+  //         throw new Error('Failed to fetch repositories');
+  //       }
+  //       const data = await response.json();
+  //       // Ensure data is an array before setting it
+  //       setAllProjectsInfo(Array.isArray(data) ? data : []);
+  //     } catch (error) {
+  //       console.error('Error fetching projects:', error);
+  //       setFetchError('Failed to fetch projects'); // Set the error message
+  //       setAllProjectsInfo([]); // Fallback to empty array if an error occurs
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
 
-    fetchProjects();
-  }, [projectSearch, pathname]); // Re-run when either the projectSearch or pathname changes
+  //   fetchProjects();
+  // }, [projectSearch, pathname]); // Re-run when either the projectSearch or pathname changes
 
   // Generate JSON-LD structured data for each individual project
   const generateJsonLdForProject = (project: CardProjectProps) => {

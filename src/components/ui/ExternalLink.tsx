@@ -9,7 +9,7 @@ const ExternalLink = ({
   children
 }: ExternalLinkProps) => (
   <Link
-    href={href}
+    href={href || '#'}
     target="_blank"
     rel="noreferrer"
     className={customClassName}

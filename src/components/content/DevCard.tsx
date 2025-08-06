@@ -12,7 +12,7 @@ const DevCard: React.FC = () => (
         title="Devcard"
         content="This Devcard represents my daily reading experience and provides insights into the topics I am currently exploring. I use the Daily.dev platform to stay up-to-date with the latest trends in software development and technology."
       />{' '}
-      <Link
+      {/* <Link
         href={`https://app.daily.dev/${siteConfig.social.daily_dev.username}`}
       >
         <Image
@@ -22,7 +22,7 @@ const DevCard: React.FC = () => (
           width={652}
           height={300}
         />
-      </Link>
+      </Link> */}
     </div>
   </AnimationContainer>
 );

@@ -13,37 +13,37 @@ const ContactMe = () => {
   const [waitTime, setWaitTime] = useState(0); // In seconds
   const [userInfo, setUserInfo] = useState<any>({});
 
-  useEffect(() => {
-    if (siteConfig.contact.debug) {
-      const fetchUserInfo = async () => {
-        try {
-          const res = await fetch('https://ipapi.co/json/');
-          const data = await res.json();
-          const browserInfo = {
-            ip: data.ip,
-            country: data.country_name,
-            city: data.city,
-            region: data.region,
-            timezone: data.timezone,
-            isp: data.org,
-            browser: navigator.userAgent,
-            platform: navigator.platform,
-            screenResolution: `${window.screen.width}x${window.screen.height}`,
-            os: navigator.platform,
-            chromeVersion: navigator.userAgent.match(
-              /Chrom(e|ium)\/([0-9]+)\./
-            )?.[2],
-            domain: window.location.href
-          };
-          setUserInfo(browserInfo);
-        } catch (error) {
-          console.error('Error fetching user info:', error);
-        }
-      };
+  // useEffect(() => {
+  //   if (siteConfig.contact.debug) {
+  //     const fetchUserInfo = async () => {
+  //       try {
+  //         const res = await fetch('https://ipapi.co/json/');
+  //         const data = await res.json();
+  //         const browserInfo = {
+  //           ip: data.ip,
+  //           country: data.country_name,
+  //           city: data.city,
+  //           region: data.region,
+  //           timezone: data.timezone,
+  //           isp: data.org,
+  //           browser: navigator.userAgent,
+  //           platform: navigator.platform,
+  //           screenResolution: `${window.screen.width}x${window.screen.height}`,
+  //           os: navigator.platform,
+  //           chromeVersion: navigator.userAgent.match(
+  //             /Chrom(e|ium)\/([0-9]+)\./
+  //           )?.[2],
+  //           domain: window.location.href
+  //         };
+  //         setUserInfo(browserInfo);
+  //       } catch (error) {
+  //         console.error('Error fetching user info:', error);
+  //       }
+  //     };
 
-      fetchUserInfo();
-    }
-  }, []);
+  //     fetchUserInfo();
+  //   }
+  // }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -52,29 +52,29 @@ const ContactMe = () => {
     const lastSubmittedTime = sessionStorage.getItem('lastSubmittedTime');
     const lastEmail = sessionStorage.getItem('lastEmail');
     const currentTime = Date.now();
-    const rateLimit = siteConfig.contact.rateLimit;
-    const FIVE_MINUTES = rateLimit * 60 * 1000; // default 10 minutes in milliseconds
+    // const rateLimit = siteConfig.contact.rateLimit;
+    // const FIVE_MINUTES = rateLimit * 60 * 1000; // default 10 minutes in milliseconds
 
-    if (
-      lastSubmittedTime &&
-      currentTime - parseInt(lastSubmittedTime) < FIVE_MINUTES
-    ) {
-      // If less than 10 minutes have passed since last submission
-      setIsWaiting(true);
-      setWaitTime(
-        Math.ceil(
-          (FIVE_MINUTES - (currentTime - parseInt(lastSubmittedTime))) / 1000
-        )
-      ); // Show wait time in seconds
-      return;
-    }
+    // if (
+    //   lastSubmittedTime &&
+    //   // currentTime - parseInt(lastSubmittedTime) < FIVE_MINUTES
+    // ) {
+    //   // If less than 10 minutes have passed since last submission
+    //   setIsWaiting(true);
+    //   setWaitTime(
+    //     Math.ceil(
+    //       (FIVE_MINUTES - (currentTime - parseInt(lastSubmittedTime))) / 1000
+    //     )
+    //   ); // Show wait time in seconds
+    //   return;
+    // }
 
-    if (lastEmail && lastEmail !== email) {
-      // If email is different and already used
-      setIsWaiting(true);
-      setWaitTime(Math.ceil(FIVE_MINUTES / 1000)); // Show 5 minutes wait time
-      return;
-    }
+    // if (lastEmail && lastEmail !== email) {
+    //   // If email is different and already used
+    //   setIsWaiting(true);
+    //   setWaitTime(Math.ceil(FIVE_MINUTES / 1000)); // Show 5 minutes wait time
+    //   return;
+    // }
 
     // Simulate form submission and success
     setTimeout(() => {
@@ -156,7 +156,7 @@ const ContactMe = () => {
               />
             </div>
 
-            {siteConfig.contact.debug && (
+            {/* {siteConfig.contact.debug && (
               <div>
                 <Input
                   type="hidden"
@@ -165,7 +165,7 @@ const ContactMe = () => {
                   required
                 />
               </div>
-            )}
+            )} */}
 
             <Button
               type="submit"

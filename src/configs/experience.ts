@@ -26,8 +26,7 @@ export const experienceEntries: ExperienceEntry[] = [
       'Building developer-first tools at Fiaz Technologies to enhance productivity. Focused on creating innovative Tools that empower developers.',
     startDate: 'Nov 2023',
     endDate: 'Present',
-    isActive: true,
-    companyUrl: siteConfig.social.github_organisation
+    isActive: true
   },
   {
     title: 'Hacktoberfest 2024 | Oct. 2024 - Nov. 2024',
@@ -35,24 +34,21 @@ export const experienceEntries: ExperienceEntry[] = [
       'Participated as a maintainer and content writer in the Hacktoberfest event. Contributed to open-source projects and wrote technical content on platforms such as Medium, Dev.to, and Hashnode.',
     startDate: 'Oct 2024',
     endDate: 'Nov 2024',
-    isActive: false,
-    companyUrl: siteConfig.other.hacktoberfest
+    isActive: false
   },
   {
     title: 'CodSoft - Data Science Intern | Sep. 2023 - Oct. 2023',
     description:
       'Self-paced Data Science Intern where I gained practical experience in data science applications using Python. I also contributed to open-source projects and maintained repositories on GitHub.',
     startDate: 'Sep 2023',
-    endDate: 'Oct 2023',
-    companyUrl: siteConfig.other.codsoft
+    endDate: 'Oct 2023'
   },
   {
     title: 'Hacktoberfest 2023 | Sep. 2023 - Oct. 2023',
     description:
       'Participated as a maintainer and content writer in the Hacktoberfest event. Contributed to open-source projects and wrote technical content on platforms such as Medium, Dev.to, and Hashnode.',
     startDate: 'Sep 2023',
-    endDate: 'Oct 2023',
-    companyUrl: siteConfig.other.hacktoberfest
+    endDate: 'Oct 2023'
   },
   {
     title: 'Technical Content Writer | Sep. 2023 - Present',

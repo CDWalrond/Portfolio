@@ -9,13 +9,13 @@ const GitHubContributionHistory: React.FC = () => (
       <h3 className="text-3xl font-medium mb-6 mt-12 text-center">
         GitHub Contributions
       </h3>
-      <Image
+      {/* <Image
         alt="GitHub Snake"
         src={`${siteConfig.other.github_snake}`}
         className="w-full h-full mx-auto mt-8 rounded-lg shadow-lg border border-gray-200 p-4 dark:bg-white bg-black"
         width={1000}
         height={600}
-      />
+      /> */}
     </div>
   </AnimationContainer>
 );

@@ -50,31 +50,28 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     >
       <Head />
 
-      <body className="transition ease-in-out min-h-screen"
-            data-new-gr-c-s-check-loaded="14.1235.0"
-            data-gr-ext-installed=""
-
+      <body
+        className="transition ease-in-out min-h-screen"
+        data-new-gr-c-s-check-loaded="14.1235.0"
+        data-gr-ext-installed=""
       >
         <HeroUIProvider>
           <ThemeProvider>
-            <SessionProvider>
-              {/* Show progress bar during loading */}
-              <ProgressBar />
+            {/* Show progress bar during loading */}
+            <ProgressBar />
 
-              {/* Main layout structure */}
-              <Header />
+            {/* Main layout structure */}
+            <Header />
 
-              <main className="flex flex-col justify-center items-center mx-auto">
-                <FlareCursor />
-                {children}
-                <SpeedInsights />
-                <Analytics />
-              </main>
+            <main className="flex flex-col justify-center items-center mx-auto">
+              <FlareCursor />
+              {children}
+              <SpeedInsights />
+              <Analytics />
+            </main>
 
-              <Chatbot />
-              <BackToTopButton />
-              <Footer />
-            </SessionProvider>
+            <BackToTopButton />
+            <Footer />
           </ThemeProvider>
         </HeroUIProvider>
       </body>

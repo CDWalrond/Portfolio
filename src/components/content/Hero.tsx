@@ -36,12 +36,12 @@ const Hero = () => {
           >
             Hire Me
           </Link>
-          <Link
+          {/* <Link
             href={siteConfig.social.kofi}
             className="px-4 py-2 sm:px-6 sm:py-3 text-pink-500 font-bold rounded-lg border border-pink-500 hover:bg-pink-500 hover:text-white transition duration-300 backdrop-blur-sm bg-white/20 dark:bg-gray-800/30 dark:border-pink-300 dark:text-pink-300 dark:hover:bg-pink-600 dark:hover:text-white"
           >
             Buy Me a Coffee
-          </Link>
+          </Link> */}
         </div>
       </AnimationContainer>
 
