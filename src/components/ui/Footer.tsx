@@ -97,7 +97,7 @@ const Footer = () => {
             </svg>
             LinkedIn
           </ExternalLink>
-          <ExternalLink href={siteConfig.social.medium}>
+          {/* <ExternalLink href={siteConfig.social.medium}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 1043.63 592.71"
@@ -109,8 +109,8 @@ const Footer = () => {
               <path d="M588.67 296.35c0 163.73-131.88 296.36-294.34 296.36S0 460.08 0 296.35 131.88 0 294.34 0s294.33 132.62 294.33 296.35zM1043.63 296.35c0 154.21-65.88 279.18-147.16 279.18s-147.16-125-147.16-279.18S815.19 17.17 896.47 17.17s147.16 125 147.16 279.18zM792.1 296.35c0 145.1-58.1 262.68-129.8 262.68s-129.8-117.58-129.8-262.68 58.1-262.68 129.8-262.68 129.8 117.58 129.8 262.68z" />
             </svg>
             Medium
-          </ExternalLink>
-          <ExternalLink href={siteConfig.social.dev}>
+          </ExternalLink> */}
+          {/* <ExternalLink href={siteConfig.social.dev}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 40 40"
@@ -135,7 +135,7 @@ const Footer = () => {
               />
             </svg>
             Hashnode
-          </ExternalLink>
+          </ExternalLink> */}
         </div>
 
         <div className="flex flex-col space-y-4">

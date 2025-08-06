@@ -106,7 +106,7 @@ export const faqData: FAQItem[] = [
               {siteConfig.social.email}
             </Link>
           </li>
-          <li>
+          {/* <li>
             Discord:{' '}
             <Link
               href={siteConfig.social.discord}
@@ -116,7 +116,7 @@ export const faqData: FAQItem[] = [
             >
               Fiaz's Server
             </Link>
-          </li>
+          </li> */}
         </ul>
         <br className="mb-2" />
         For more details, you can check my contact information on my{' '}
@@ -186,25 +186,25 @@ export const faqData: FAQItem[] = [
         Additionally, you can support me directly through:
         <ul className="list-disc pl-6 text-black dark:text-white text-sm">
           <li>
-            <Link
+            {/* <Link
               href={siteConfig.social.kofi}
               className="text-blue-500 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Ko-fi
-            </Link>{' '}
+            </Link>{' '} */}
             – Buy me a coffee and support my work!
           </li>
           <li>
-            <Link
+            {/* <Link
               href={siteConfig.social.sponsor}
               className="text-blue-500 hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               GitHub Sponsors
-            </Link>{' '}
+            </Link>{' '} */}
             – Sponsor me on GitHub to show your support!
           </li>
         </ul>
@@ -233,7 +233,7 @@ export const faqData: FAQItem[] = [
         >
           via email
         </Link>{' '}
-        or{' '}
+        {/* or{' '}
         <Link
           href={siteConfig.social.discord}
           className="text-blue-500 hover:underline"
@@ -241,7 +241,7 @@ export const faqData: FAQItem[] = [
           rel="noopener noreferrer"
         >
           Discord
-        </Link>{' '}
+        </Link>{' '} */}
         to discuss your project details. I would be happy to explore how we can
         collaborate!
         <br className="mb-2" />

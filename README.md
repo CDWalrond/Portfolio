@@ -31,7 +31,6 @@
 
 </div>
 
-
 Thank you for your interest in my portfolio project! 🎉
 
 **This repository ([portfolio V2](https://github.com/muhammad-fiaz/portfolio)) is now fully decrypted and will no longer receive major updates.**  
@@ -39,15 +38,18 @@ I am excited to announce that I am moving forward with my new and improved portf
 👉 [muhammad-fiaz/website](https://github.com/muhammad-fiaz/website)
 
 ### What does this mean for you?
+
 - **You are welcome to use, fork, or reference this V2 portfolio for your own learning or projects.**
 - The repo will remain public as an archive for the community.
 - All features, code, and documentation are now fully accessible.
 
 ### Looking for the latest version?
+
 Check out my new portfolio work (V3, built with Astro):  
 🔗 [https://github.com/muhammad-fiaz/website](https://github.com/muhammad-fiaz/website)
 
 ### Thank you!
+
 Thanks to everyone who starred, contributed, or offered feedback on V2.  
 Your support has been invaluable and I look forward to sharing even more with V3 (Astro)!
 
@@ -55,14 +57,13 @@ Your support has been invaluable and I look forward to sharing even more with V3
 
 **Stay tuned for more updates and features in Portfolio V3! 🚀**
 
-
 # About This Project
 
-This project is built with Next.js and React, showcasing [Muhammad Fiaz](https://github.com/muhammad-fiaz/)'s [personal website](https://muhammadfiaz.com/).
+This project is built with Next.js and React, showcasing [Muhammad Fiaz](https://github.com/muhammad-fiaz/)'s [personal website](https://cdw-portfolio.com/).
 
 **Feel free to use this project for your portfolio or as a project reference. If you find it helpful, don't forget to give it a ⭐️ to show your support. [Fork this repo](https://github.com/muhammad-fiaz/portfolio/fork) if you want to contribute✨**
 
-**Support this non-profit open-source project with a little [sponsor ❤️](https://github.com/sponsors/muhammad-fiaz) or [Buy Me a Coffee ☕](https://buymecoffee.com/muhammadfiaz).**
+**Support this non-profit open-source project with a little [sponsor ❤️](https://github.com/sponsors/muhammad-fiaz) or [Buy Me a Coffee ☕](https://buymecoffee.com/cdw-portfolio).**
 
 Here the Sample Performance of the Portfolio measured by [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools.
 
@@ -159,7 +160,7 @@ Also, Read the [React.js Documentation](https://reactjs.org/docs/getting-started
   <a href="https://github.com/sponsors/muhammad-fiaz" target="_blank">
     <img src="https://img.shields.io/badge/Sponsor-%231EAEDB.svg?&style=for-the-badge&logo=GitHub-Sponsors&logoColor=white" alt="Sponsor Muhammad Fiaz" />
   </a>
-  <a href="https://buymecoffee.com/muhammadfiaz" target="_blank">
+  <a href="https://buymecoffee.com/cdw-portfolio" target="_blank">
     <img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-%23FF813F.svg?&style=for-the-badge&logo=buy-me-a-coffee&logoColor=white" alt="Buy Me a Coffee" />
   </a>
 </div>

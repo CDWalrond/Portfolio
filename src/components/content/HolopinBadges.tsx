@@ -15,7 +15,7 @@ const HolopinBadges: React.FC = () => (
         code, documentation, and support for open-source tools."
       />
 
-      <Link href={`https://holopin.io/@${siteConfig.social.holopin}`}>
+      {/* <Link href={`https://holopin.io/@${siteConfig.social.holopin}`}>
         <Image
           src={`https://holopin.me/${siteConfig.social.holopin}`}
           alt={`${siteConfig.author}'s Holopin Badges`}
@@ -23,7 +23,7 @@ const HolopinBadges: React.FC = () => (
           width={800}
           height={400}
         />
-      </Link>
+      </Link> */}
     </div>
   </AnimationContainer>
 );

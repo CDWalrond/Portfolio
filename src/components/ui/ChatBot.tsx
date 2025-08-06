@@ -14,7 +14,7 @@ const Chatbot = () => {
   const [isRateLimitReached, setIsRateLimitReached] = useState(false); // Track if rate limit is reached
 
   // Get rate limit from site config
-  const rateLimit = siteConfig.chatbot.rateLimit;
+  // const rateLimit = siteConfig.chatbot.rateLimit;
   const currentTime = Date.now();
 
   const toggleChat = () => {
@@ -42,10 +42,10 @@ const Chatbot = () => {
     }
 
     // If request count exceeds rate limit, show rate limit modal
-    if (savedRequestCount >= rateLimit) {
-      setIsRateLimitReached(true); // Set the rate limit flag
-      return;
-    }
+    // if (savedRequestCount >= rateLimit) {
+    //   setIsRateLimitReached(true); // Set the rate limit flag
+    //   return;
+    // }
 
     const newMessages = [...messages, { text: message.trim(), sender: 'user' }];
     setMessages(newMessages);
@@ -95,12 +95,12 @@ const Chatbot = () => {
       parseInt(getCookie('requestCount') as string) || 0;
     const savedLastRequestTime =
       parseInt(getCookie('lastRequestTime') as string) || Date.now();
-    const savedRateLimitStatus = savedRequestCount >= rateLimit;
+    // const savedRateLimitStatus = savedRequestCount >= rateLimit;
 
     // If the saved request count is >= rate limit, set the rate limit flag
-    if (savedRateLimitStatus) {
-      setIsRateLimitReached(true);
-    }
+    // if (savedRateLimitStatus) {
+    //   setIsRateLimitReached(true);
+    // }
 
     if (messages.length === 0) {
       const initialMessage = {
@@ -109,7 +109,7 @@ const Chatbot = () => {
       };
       setMessages([initialMessage]);
     }
-  }, [isOpen, messages.length, rateLimit]); // Add messages.length and rateLimit as dependencies
+  }, [isOpen, messages.length]); // Add messages.length and rateLimit as dependencies
 
   return (
     <>

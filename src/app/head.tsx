@@ -47,11 +47,11 @@ const Head = () => {
       <meta property="og:title" content={meta.openGraph.title} />
       <meta property="og:description" content={meta.openGraph.description} />
       <meta property="og:image" content={meta.openGraph.image} />
-      <meta name="twitter:card" content={meta.twitter.card} />
+      {/* <meta name="twitter:card" content={meta.twitter.card} />
       <meta name="twitter:site" content={meta.twitter.site} />
       <meta name="twitter:title" content={meta.twitter.title} />
       <meta name="twitter:description" content={meta.twitter.description} />
-      <meta name="twitter:image" content={meta.twitter.image} />
+      <meta name="twitter:image" content={meta.twitter.image} /> */}
       <link rel="canonical" href={meta.url} />
       <link rel="icon" href={meta.link[0].href} />
 

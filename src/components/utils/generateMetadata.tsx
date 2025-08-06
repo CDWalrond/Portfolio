@@ -30,13 +30,13 @@ export const generateMetadata = ({
       site_name: titlePrefix,
       image: siteConfig.profile_image // Add profile image for Open Graph
     },
-    twitter: {
-      title: pageTitle,
-      description: description || siteConfig.metadata.description,
-      card: 'summary_large_image',
-      site: siteConfig.social.twitter,
-      image: siteConfig.profile_image // Add profile image for Twitter card
-    },
+    // twitter: {
+    //   title: pageTitle,
+    //   description: description || siteConfig.metadata.description,
+    //   card: 'summary_large_image',
+    //   site: siteConfig.social.twitter,
+    //   image: siteConfig.profile_image // Add profile image for Twitter card
+    // },
     alternates: {
       canonical: fullPath // Adding canonical URL
     },

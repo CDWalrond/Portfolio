@@ -18,18 +18,18 @@ const SupportMe = () => {
         helps me keep this project going and make it even better!
       </p>
       <div className="mb-6 flex flex-col sm:flex-row sm:justify-center sm:space-x-4">
-        <Button
+        {/* <Button
           onPress={() => window.open(siteConfig.social.sponsor, '_blank')}
           className="bg-[#1EAEDB] text-white px-4 sm:px-6 text-sm sm:text-base font-medium rounded-lg mb-4 sm:mb-0 sm:inline-block transition-all duration-300 transform hover:bg-[#178CB7] hover:shadow-lg dark:bg-[#0A84FF] dark:hover:bg-[#0056A3]"
         >
           Sponsor on GitHub <span className="heartbeat-animation">🧡</span>
-        </Button>
-        <Button
+        </Button> */}
+        {/* <Button
           onPress={() => window.open(siteConfig.social.kofi, '_blank')}
           className="bg-[#FF813F] text-white px-4 sm:px-6 text-sm sm:text-base font-medium rounded-lg sm:inline-block transition-all duration-300 transform hover:bg-[#FF5C1F] hover:shadow-lg dark:bg-[#FF4F00] dark:hover:bg-[#D94400]"
         >
           Buy Me A Coffee <span className="heartbeat-animation">☕</span>
-        </Button>
+        </Button> */}
       </div>
       <p className="text-sm sm:text-lg">Thank you for your support! 🙏</p>
     </section>

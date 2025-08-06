@@ -67,14 +67,14 @@ const BlogSection = () => {
             blogging. Some of them are personal, technical articles, or insights
             I've shared on various topics. If you want to see all my posts,
             visit my{' '}
-            <Link
+            {/* <Link
               href={siteConfig.social.blog}
               target="_blank"
               rel="noopener noreferrer"
               className="underline transition-all ease"
             >
               Blog Page
-            </Link>
+            </Link> */}
             .
           </p>
 
